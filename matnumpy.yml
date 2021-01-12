@@ -1,0 +1,22 @@
+name: matnumpy
+channels:
+  - defaults
+  - pytorch
+  - conda-forge
+dependencies:
+  - matplotlib=3.3.2
+  #- data-science-types=0.2.22
+  - mkl_fft=1.2.0
+  - numpy=1.19.2
+  - numpy-base=1.19.2
+  - pandas=1.1.5
+  - pillow=8.0.1
+  - pip=20.3.3
+  - python=3.7.9
+  - pytorch=1.6.0
+  - pytz= 2020.5
+  - scikit-learn= 0.23.2
+  - scipy = 1.5.2
+  - seaborn = 0.11.1
+
+#https://stackoverflow.com/questions/60247157/how-can-i-get-stub-files-for-matplotlib-numpy-scipy-pandas-etc
