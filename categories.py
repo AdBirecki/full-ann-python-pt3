@@ -73,3 +73,20 @@ for i in range(300):
 
 duration = time.time() - start_time
 print(f'training took {duration/60} minutes')
+
+
+plt.plot(range(epochs), losses)
+plt.show()
+with torch.no_grad():
+    y_val = model(cat_test, con_test)
+
+    loss = torch.sqrt(criterion(y_val, y_test))
+
+    print(loss)
+
+    for i in range(10):
+        diff = np.abs(y_val[i].item() - y_test[i].item())
+        print(
+            f'{i}.) PREDICTED: {y_val[i].item(): 8.2f} TRUE: {y_test[i].item(): 8.2f} DIFF: {diff:8.2f}')
+
+torch.save(model.state_dict(), 'TaxiModel.pt')
