@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\Adam\\.conda\\envs\\matnumpy\\python.exe",
+    "python.pythonPath": "c:\\Users\\Adam\\anaconda3\\envs\\matnumpy\\python.exe",
     "python.formatting.provider": "autopep8"
 }
